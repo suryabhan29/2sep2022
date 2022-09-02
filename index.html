@@ -1,0 +1,76 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Responsive Design tags-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--SEO tags-->
+    <meta name="keywords" content=",,,," />
+    <meta name="description" content="html class structure" />
+    <title>Html form</title>
+
+    <style>
+        form > fieldset > div{
+            margin-bottom: 15px;
+        }
+    </style>
+
+
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>personal details</legend>
+
+            <div>
+                <label>salutation</label><br />
+                <select name="salutation">
+                    <option value="">--None--</option>
+                    <option value="mr">Mr</option>
+                    <option value="mrs">Mrs.</option>
+                </select>
+            </div>
+            
+            <div>
+                <label>First name</label>
+                <input type="text" name="firstname" />
+            </div>
+
+            <div>
+                <label>Last name</label>
+                <input type="text" name="lastname" />
+            
+            </div>
+            <div>
+                <label>Gender :</label>
+               <label>
+                    <input type="radio" name="gender" value="Male" />Male
+               </label>
+               <label>
+                    <input type="radio" name="gender" value="Female" />Female
+               </label>
+                
+            </div>
+
+            <div>
+                <label>Email:</label>
+                <input type="email" name="email" />
+            </div>
+
+            <div>
+                <label>Date of Birth:</label>
+                <input type="date" name="dob" />
+            </div>
+
+            <div>
+                <label>Address :</label><br />
+                <textarea name="address"></textarea>
+            </div>
+            <input type="submit" name="submit" value="save" />
+        
+        </fieldset>
+    </form>
+</body>
+</html>
